@@ -1,0 +1,30 @@
+<div class="d-flex w-100 align-items-center flex-wrap gap-2">
+  <button class="btn btn-outline-secondary" id="today">Сегодня</button>
+  <button class="btn btn-outline-secondary" id="week">Неделя</button>
+  <button class="btn btn-outline-secondary" id="month">Месяц</button>
+  <button class="btn btn-outline-secondary" id="year">Год</button>
+  <button class="btn btn-outline-secondary" id="all">Все</button>
+  <div class="d-flex flex-wrap align-items-center gap-2 justify-content-around">
+    <button class="btn btn-outline-secondary" disabled id="interval">Интервал</button>
+    <div class="d-flex flex-nowrap align-items-center ">
+      <div class="d-flex flex-nowrap align-items-center ">
+        <span class="me-1">с</span>
+        <input
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+                type="text"
+                name="start-date-input"
+                id="dateFrom"
+                class="date_input"
+                placeholder="Дата"
+        >
+      </div>
+      <div class="d-flex flex-nowrap align-items-center ">
+        <span class="me-1">по</span>
+        <input onfocus="(this.type='date')"
+               onblur="(this.type='text')" type="text" name="finish-date-input" id="dateTo"
+               class="date_input" placeholder="Дата">
+      </div>
+    </div>
+  </div>
+</div>
